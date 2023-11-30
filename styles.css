@@ -2,53 +2,194 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 .header{
     float: left;
     width: 100%;
     height: 70px;
+    backdrop-filter: blur(30px);
     line-height: 70px;
     padding: 0px 5%;
-    background: white;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
 }
+
+
 #logo{
     float: left;
-    width: 40px;
+    width: 35px;
+    color: white;
 }
 .menu{
     float: right;
 }
 .menu a{
-    padding: 0px 5px;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0px 10px;
     font-weight: bold;
     font-size: 20px;
 }
 .menu a:hover{
-    background-color: rgb(212, 211, 211);
-    color: white;
+    background-color: white;
+    color: rgb(15, 15, 15);
     padding: 10px;
     margin: 9px;
     border-radius: 15px;
 }    
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
 #sign{
-    background-color: rgb(196, 195, 195);
-    color: rgb(7, 7, 7);
+    background-color: black;
+    color: rgb(196, 195, 195);
     padding: 10px;
     margin: 9px;
     border-radius: 15px;
 }
 #sign:hover{
-    background-color: rgb(212, 211, 211);
-    color: white;
+    background-color: white;
+    color: rgb(12, 12, 12);
 }            
 .main{
     width: 100%;
-    background: url('images/wall+mounted+small+home+office.jfif');
+    height: 700px;
+    background: url('images/Mississauga.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.about{
+    width: 100%;
+    height: 550px;
+    background: black;
+}
+.about-container{
+    float: left;
+    width: 100%;
+    margin: 90px 0;
+    padding: 5px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+}
+.about-container img{
+    width: 100%;
+    margin-top: 45px;
+    border-radius: 15px;
+}
+.about-container .text{
+    color: white;
+    margin-top: 80px;
+}
+.about-container .text h2{
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.about-container .text p{
+    margin-bottom: 45px;
+    line-height: 22px;
+}
+#more{
+    background-color: rgb(168, 167, 167);
+    color: white;
+    padding: 10px 15px;
+    margin-top: 35px;
+    text-decoration: none;
+    
+}
+#more:hover{
+    background-color: rgb(168, 167, 167);
+    color: black;
+}            
+
+.services{
+    width: 100%;
+    height: 600px;
+    background: black;
+    border-top: 1px solid rgb(168, 167, 167);
+    box-shadow: 0px 3px 5px 0px rgba(105, 104, 104, 0.3);
+}
+.services-container{
+    float: left;
+    width: 100%;
+    margin: 100px 0;
+    padding: 5px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: space-between;
+}
+.services-container .services-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: -22px;
+}
+.services-container .services-box h2{
+    color: black;
+    margin-bottom: 12px;
+}
+.services h3{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 75px;
+}
+.cadre-services{
+    background-color: rgb(253, 252, 252);
+    padding: 5px 25px;
+    margin-top: -5px;
+}
+
+/*client*/
+.client{
+    width: 100%;
+    height: 600px;
+    background: white;
+    border-top: 1px solid rgb(168, 167, 167);
+}
+.client-container{
+    float: left;
+    width: 100%;
+    margin: 100px 0;
+    padding: 5px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: space-between;
+}
+.client-container .client-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: -35px;
+}
+.client-container .client-box h2{
+    margin-top: 5px;
+    color: white;
+    margin-bottom: 12px;
+}
+.client h3{
+    color: black;
+    font-size: 30px;
+    margin: 70px 0;
+    padding: 0px 100px;
+}
+.client p{
+    font-size: 18px;
+    margin-top: -55px;
+    padding: 0px 100px;
+}
+.cadre{
+    background-color: rgb(14, 13, 13);
+    padding: 5px 25px;
+    margin-top: -5px;
 }
